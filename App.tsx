@@ -1,11 +1,11 @@
-import { config } from '@gluestack-ui/config';
-import { Box, GluestackUIProvider, Text } from '@gluestack-ui/themed';
-import { ScrollView } from 'react-native';
-import Gradient from './assets/Icons/Gradient';
-import DocumentData from './assets/Icons/DocumentData';
-import LightBulbPerson from './assets/Icons/LightbulbPerson';
-import Rocket from './assets/Icons/Rocket';
-import Logo from './assets/Icons/Logo';
+import { config } from "./gluestack-ui.config";
+import { Box, GluestackUIProvider, Text } from "@gluestack-ui/themed";
+import { ScrollView } from "react-native";
+import Gradient from "./assets/Icons/Gradient";
+import DocumentData from "./assets/Icons/DocumentData";
+import LightBulbPerson from "./assets/Icons/LightbulbPerson";
+import Rocket from "./assets/Icons/Rocket";
+import Logo from "./assets/Icons/Logo";
 
 export default function App() {
   return (
@@ -54,17 +54,17 @@ const Container = () => {
   return (
     <Box flex={1} backgroundColor="$black">
       <ScrollView
-        style={{ height: '100%' }}
+        style={{ height: "100%" }}
         contentContainerStyle={{ flexGrow: 1 }}
       >
         <Box
           position="absolute"
           sx={{
-            '@base': {
+            "@base": {
               h: 500,
               w: 500,
             },
-            '@lg': {
+            "@lg": {
               h: 700,
               w: 700,
             },
@@ -75,14 +75,14 @@ const Container = () => {
         <Box
           height="60%"
           sx={{
-            '@base': {
-              my: '$16',
-              mx: '$5',
-              height: '80%',
+            "@base": {
+              my: "$16",
+              mx: "$5",
+              height: "80%",
             },
-            '@lg': {
-              my: '$24',
-              mx: '$32',
+            "@lg": {
+              my: "$24",
+              mx: "$32",
             },
           }}
           justifyContent="space-between"
@@ -96,13 +96,13 @@ const Container = () => {
             alignItems="center"
             marginTop={20}
             sx={{
-              '@base': {
-                flexDirection: 'column',
+              "@base": {
+                flexDirection: "column",
               },
-              '@sm': {
-                flexDirection: 'row',
+              "@sm": {
+                flexDirection: "row",
               },
-              '@md': { alignSelf: 'flex-start' },
+              "@md": { alignSelf: "flex-start" },
             }}
           >
             <Text color="$white" fontWeight="$normal">
@@ -117,11 +117,11 @@ const Container = () => {
           </Box>
           <Box
             sx={{
-              '@base': {
-                flexDirection: 'column',
+              "@base": {
+                flexDirection: "column",
               },
-              '@md': {
-                flexDirection: 'row',
+              "@md": {
+                flexDirection: "row",
               },
             }}
           >
