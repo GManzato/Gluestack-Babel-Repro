@@ -1,23 +1,22 @@
-import { config } from "./gluestack-ui.config";
-import { Box, GluestackUIProvider, Text } from "@gluestack-ui/themed";
+import { Box, styled, Button, ButtonText, Text } from "@gluestack-ui/themed";
 import { ScrollView } from "react-native";
-import Gradient from "./assets/Icons/Gradient";
-import DocumentData from "./assets/Icons/DocumentData";
-import LightBulbPerson from "./assets/Icons/LightbulbPerson";
-import Rocket from "./assets/Icons/Rocket";
-import Logo from "./assets/Icons/Logo";
+import Gradient from "../assets/Icons/Gradient";
+import DocumentData from "../assets/Icons/DocumentData";
+import LightBulbPerson from "../assets/Icons/LightbulbPerson";
+import Rocket from "../assets/Icons/Rocket";
+import Logo from "../assets/Icons/Logo";
 
-export default function App() {
-  return (
-    <GluestackUIProvider config={config}>
-      <Home />
-    </GluestackUIProvider>
-  );
-}
+const TextStyled = styled(Text, {
+  color: "$white",
+  fontSize: "$4",
+  fontWeight: "$medium",
+});
 
 const Home = () => {
   return <Container />;
 };
+
+export default Home;
 
 const FeatureCard = ({ iconSvg: IconSvg, name, desc }: any) => {
   return (
@@ -34,18 +33,9 @@ const FeatureCard = ({ iconSvg: IconSvg, name, desc }: any) => {
       p="$4"
       rounded="$md"
     >
-      <Box alignItems="center" display="flex" flexDirection="row">
-        {/* <Image source={iconSvg} alt="document" width={22} height={22} /> */}
-        <Text>
-          <IconSvg />
-        </Text>
-        <Text fontSize={22} color="$white" fontWeight="500" ml="$2">
-          {name}
-        </Text>
-      </Box>
-      <Text color="$textDark400" mt="$2">
-        {desc}
-      </Text>
+      <Button>
+        <ButtonText>Test</ButtonText>
+      </Button>
     </Box>
   );
 };

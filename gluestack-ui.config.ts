@@ -1,3 +1,3 @@
+import { config as newConfig } from "./config/gluestack-ui.config";
 import { config as defaultConfig } from "@gluestack-ui/config";
-
-export const config = defaultConfig;
+export const config = newConfig;
